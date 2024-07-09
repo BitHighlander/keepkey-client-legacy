@@ -2,7 +2,7 @@ import 'webextension-polyfill';
 import { exampleThemeStorage } from '@chrome-extension-boilerplate/storage';
 import packageJson from '../../package.json'; // Adjust the path as needed
 import { onStartKeepkey } from './keepkey';
-// import { handleEthereumRequest } from './methods';
+import { handleEthereumRequest } from './methods';
 import { JsonRpcProvider } from 'ethers';
 const TAG = ' | background | ';
 console.log('background script loaded');
@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 // Ensure the icon is set when the extension is installed or updated
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.get(['theme'], (result) => {
+  chrome.storage.sync.get(['theme'], result => {
     const theme = result.theme || 'light'; // Default to light theme if not set
     updateIcon(theme);
   });
@@ -93,13 +93,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log(tag, 'ADDRESS:', ADDRESS);
     // console.log(tag, 'KEEPKEY_SDK:', KEEPKEY_SDK);
 
-    // handleEthereumRequest(method, params, provider, KEEPKEY_SDK, ADDRESS)
-    //     .then(result => {
-    //       sendResponse(result);
-    //     })
-    //     .catch(error => {
-    //       sendResponse({ error: error.message });
-    //     });
+    handleEthereumRequest(method, params, provider, KEEPKEY_SDK, ADDRESS)
+      .then(result => {
+        sendResponse(result);
+      })
+      .catch(error => {
+        sendResponse({ error: error.message });
+      });
 
     return true; // Indicates that the response is asynchronous
   }

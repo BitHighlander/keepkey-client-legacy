@@ -63,6 +63,9 @@ const manifest = Object.assign(
         matches: ['*://*/*'],
       },
     ],
+    content_security_policy: {
+      extension_pages: "script-src 'self'; object-src 'self'",
+    },
   },
   !isFirefox && { side_panel: { ...sidePanelConfig.side_panel } },
 );
