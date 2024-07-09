@@ -5,11 +5,11 @@
 ![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![](https://badges.aleen42.com/src/vitejs.svg)
-![GitHub action badge](https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/actions/workflows/build-zip.yml/badge.svg)
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jonghakseo/chrome-extension-boilerplate-react-viteFactions&count_bg=%23#222222&title_bg=%23#454545&title=😀&edge_flat=true" alt="hits"/>
+![GitHub action badge](https://github.com/Bithighlander/keepkey-client/actions/workflows/build-zip.yml/badge.svg)
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Bithighlander/keepkey-clientFactions&count_bg=%23#222222&title_bg=%23#454545&title=😀&edge_flat=true" alt="hits"/>
 
 > This boilerplate
-> has [Legacy version](https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/tree/legacy)
+> has [Legacy version](https://github.com/Bithighlander/keepkey-client/tree/legacy)
 
 </div>
 
@@ -19,7 +19,7 @@
 > [!IMPORTANT]
 > Share storage state between every page
 >
-> https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/assets/53500778/1992e46c-032a-4743-bbd2-c421757517d7
+> https://github.com/Bithighlander/keepkey-client/assets/53500778/1992e46c-032a-4743-bbd2-c421757517d7
 
 ## Table of Contents
 
@@ -70,7 +70,7 @@ This boilerplate is made for creating chrome extensions using React and Typescri
 1. Run:
     - Dev: `pnpm dev`
       - When you run with Windows, you should run as
-        administrator. [(Issue#456)](https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/issues/456)
+        administrator. [(Issue#456)](https://github.com/Bithighlander/keepkey-client/issues/456)
     - Prod: `pnpm build`
 2. Open in browser - `chrome://extensions`
 3. Check - `Developer mode`
@@ -139,14 +139,14 @@ Some shared packages
 
 ## Star History <a name="starhistory"></a>
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Jonghakseo/chrome-extension-boilerplate-react-vite&type=Date)](https://star-history.com/#Jonghakseo/chrome-extension-boilerplate-react-vite&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Bithighlander/keepkey-client&type=Date)](https://star-history.com/#Bithighlander/keepkey-client&Date)
 
 ## Contributors <a name="contributors"></a>
 
 This Boilerplate is made possible thanks to all of its contributors.
 
-<a href="https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/graphs/contributors">
-  <img width="500px" src="https://contrib.rocks/image?repo=Jonghakseo/chrome-extension-boilerplate-react-vite" alt="All Contributors"/>
+<a href="https://github.com/Bithighlander/keepkey-client/graphs/contributors">
+  <img width="500px" src="https://contrib.rocks/image?repo=Bithighlander/keepkey-client" alt="All Contributors"/>
 </a>
 
 ---
@@ -158,4 +158,4 @@ This Boilerplate is made possible thanks to all of its contributors.
 
 ---
 
-Made by [Jonghakseo](https://nookpi.tistory.com/)
+Made by [Bithighlander](https://nookpi.tistory.com/)

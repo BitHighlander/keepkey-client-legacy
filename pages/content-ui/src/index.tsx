@@ -5,7 +5,7 @@ import App from '@src/app';
 import tailwindcssOutput from '@src/tailwind-output.css?inline';
 
 const root = document.createElement('div');
-root.id = 'chrome-extension-boilerplate-react-vite-content-view-root';
+root.id = 'keepkey-client-content-view-root';
 
 document.body.append(root);
 
