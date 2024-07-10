@@ -1,60 +1,31 @@
 import { extendTheme } from '@chakra-ui/react';
-
 import { config } from './config';
 
-// Define the extended pioneer-themed color palette
+// Define the extended KeepKey-themed color palette
 const colors = {
-  pioneerGreen: {
-    // Your green shades as before
-    50: '#e8f5e9',
-    100: '#c8e6c9',
-    200: '#a5d6a7',
-    300: '#81c784',
-    400: '#66bb6a',
-    500: '#4caf50',
-    600: '#43a047',
-    700: '#388e3c',
-    800: '#2e7d32',
-    900: '#1b5e20',
+  keepKeyGold: {
+    50: '#fffaf0',
+    100: '#f4e5b2',
+    200: '#e8cc84',
+    300: '#ddb356',
+    400: '#d29929',
+    500: '#b57f1e',
+    600: '#916419',
+    700: '#6d4a13',
+    800: '#49300e',
+    900: '#251807',
   },
-  pioneerSky: {
-    // Example complementary blues
-    50: '#ebf8ff',
-    100: '#bee3f8',
-    200: '#90cdf4',
-    300: '#63b3ed',
-    400: '#4299e1',
-    500: '#3182ce',
-    600: '#2b6cb0',
-    700: '#2c5282',
-    800: '#2a4365',
-    900: '#1A365D',
-  },
-  pioneerSunset: {
-    // Warm accent colors
-    50: '#fff5f5',
-    100: '#fed7d7',
-    200: '#feb2b2',
-    300: '#fc8181',
-    400: '#f56565',
-    500: '#e53e3e',
-    600: '#c53030',
-    700: '#9b2c2c',
-    800: '#822727',
-    900: '#63171b',
-  },
-  pioneerDark: {
-    // Shades of dark gray with a hint of green
-    50: '#e2e4e3',
-    100: '#c4c6c5',
-    200: '#a5a8a7',
-    300: '#868a89',
-    400: '#6a6e6d',
-    500: '#4e5251',
-    600: '#3d4140',
-    700: '#2c3030',
-    800: '#1c1f1e',
-    900: '#0c0e0d',
+  keepKeyBlack: {
+    50: '#e5e5e5',
+    100: '#b8b8b8',
+    200: '#8a8a8a',
+    300: '#5c5c5c',
+    400: '#3d3d3d',
+    500: '#1f1f1f',
+    600: '#1a1a1a',
+    700: '#141414',
+    800: '#0f0f0f',
+    900: '#0a0a0a',
   },
 };
 
@@ -62,8 +33,8 @@ export const theme = extendTheme({
   initialColorMode: 'dark',
   useSystemColorMode: false,
   colors: {
-    pioneerGreen: colors.pioneerGreen, // add the new color palette to the theme
-    gray: colors.pioneerDark, // why this make it black?
+    keepKeyGold: colors.keepKeyGold,
+    gray: colors.keepKeyBlack,
   },
   fonts: {
     heading: 'Plus Jakarta Sans, sans-serif',
@@ -71,22 +42,18 @@ export const theme = extendTheme({
   },
   components: {
     Button: {
-      // Set the default style for buttons
       baseStyle: {
-        fontWeight: 'bold', // Example button styling
+        fontWeight: 'bold',
       },
-      // Variant styles
       variants: {
         solid: (props: any) => ({
-          bg: props.colorMode === 'dark' ? 'pioneerGreen.500' : 'pioneerGreen.400',
+          bg: props.colorMode === 'dark' ? 'keepKeyGold.500' : 'keepKeyGold.400',
           color: 'white',
           _hover: {
-            bg: 'pioneerGreen.600', // Darker green on hover
+            bg: 'keepKeyGold.600',
           },
         }),
-        // You can define other variants such as "outline", "ghost", etc.
       },
-      // Default button size and variant
       defaultProps: {
         size: 'md',
         variant: 'solid',
